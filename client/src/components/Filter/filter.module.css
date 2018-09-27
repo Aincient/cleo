@@ -1,0 +1,87 @@
+.root {
+  margin-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+  &.open {
+
+  }
+}
+
+.title {
+  position: relative;
+  text-align: left;
+}
+
+.filterTitle {
+  display: inline-block;
+  max-width: 70%;
+}
+
+.count {
+  color: rgb(228, 228, 228);
+}
+
+.handle {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  line-height: 24px;
+  top: 0;
+}
+
+.options {
+  display: none;
+  padding: 10px 0;
+}
+
+&.readonly:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(51, 51, 51, 0);
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+.open {
+  display: block;
+}
+
+
+.dashboard {
+  text-align: right;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  .title {
+    background: rgba(242, 242, 242, 1);
+    padding: 5px;
+  }
+  .count {
+    color: #b1b1b1;
+  }
+  .handle {
+    top: 5px;
+    right: 10px;
+  }
+  .filterOptionCount {
+    background: transparent;
+  }
+
+  .selected {
+    font-size: 12px;
+    position: absolute;
+    right: 40px;
+    top: 9px;
+  }
+}
+
+
+.handleOverlay {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+}

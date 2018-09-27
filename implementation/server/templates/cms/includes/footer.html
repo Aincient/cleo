@@ -1,0 +1,26 @@
+{% load navigation_tags static menu_tags wagtailtrans_tags %}
+
+<footer class="footer">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    {% if page.language|stringformat:"s" ==  "English" %}
+                        {% flat_menu 'footer_menu_en' max_levels=1 show_menu_heading=False  use_specific=USE_SPECIFIC_TOP_LEVEL  fall_back_to_default_site_menus=True %}
+                    {% elif page.language|stringformat:"s" ==  "Dutch" %}
+                        {% flat_menu 'footer_menu_nl' max_levels=1 show_menu_heading=False  use_specific=USE_SPECIFIC_TOP_LEVEL  fall_back_to_default_site_menus=True %}
+                    {% endif %}
+                </div>
+                <div class="col">
+                    {% get_footer_text %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if page.language|stringformat:"s" ==  "English" %}
+        {% get_cookie_text_en %}
+    {% elif page.language|stringformat:"s" ==  "Dutch" %}
+        {% get_cookie_text_nl %}
+    {% endif %}
+</footer>

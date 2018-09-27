@@ -1,0 +1,18 @@
+{% load wagtailimages_tags %}
+
+<div id="{{self.anchor}}" class="block {{self.classname}}" style="background-color: {{self.background_color}}; color: {{self.color}}">
+  <div class="inner">
+    <h2 class="title">{{self.heading_text}}</h2>
+    {% if self.sub_text %}
+      <h4 class="sub-title">{{self.sub_text}}</h4>
+    {% endif %}
+    <div class="row">
+      <div class="col-12 col-md-6">
+        {{self.left_block}}
+      </div>
+      <div class="col-12 col-md-6">
+        {{self.right_block}}
+      </div>
+    </div>
+  </div>
+</div>

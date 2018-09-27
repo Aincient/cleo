@@ -1,0 +1,32 @@
+.wrapper {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.savedObjectOptions {
+  text-align: right;
+  padding: 0 0 10px;
+  min-height: 50px;
+  @mixin mobile {
+    text-align: left;
+  }
+}
+
+.goBack {
+  float: left;
+  @mixin mobile {
+    margin-bottom: 10px;
+  }
+}
+
+.dropdownMenu {
+  background: rgb(189, 148, 0)!important;
+  a {
+    color: white!important;
+  }
+
+}

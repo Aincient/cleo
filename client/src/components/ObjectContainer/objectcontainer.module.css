@@ -1,0 +1,139 @@
+.root {
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.wrapper {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.type {
+  color: #333;
+}
+
+.image {
+  text-align: center;
+  min-height: 150px;
+  margin-bottom: 10px;
+  img {
+    max-height: 370px;
+  }
+}
+
+.objectWrapper {
+  padding: 20px;
+  transition: 250ms background;
+  &:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+
+  &.imageViewer {
+    padding: 0;
+  }
+}
+
+
+.paging {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  @mixin mobile {
+    text-align: center;
+  }
+  @mixin tablet {
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    padding: 20px;
+    @mixin mobile {
+      padding: 12px;
+    }
+    a {
+      text-decoration: none;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.goto {
+  padding-top: 10px;
+}
+
+.pagingWrapper {
+  padding-left: 0;
+}
+
+.active {
+  a {
+    color: white;
+    background: rgb(189, 148, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+}
+
+.viewOption {
+  padding: 10px 0 0;
+  padding-right: 0!important;
+  > div {
+    width: initial!important;
+    float: right;
+  }
+}
+
+.viewOptionVisual {
+  &:before {
+    content: "\f00a";
+    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+}
+
+.viewOptionGrid {
+  &:before {
+    content: "\f009";
+    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+}
+
+.viewOptionList {
+  &:before {
+    content: "\f03a";
+    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+}
+
+.objectForImageSearch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #333;
+}
+
+.selectImageForAI {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+
+.carousel {
+  margin: 0 auto;
+  .thumbs {
+    padding-left: 0;
+  }
+}

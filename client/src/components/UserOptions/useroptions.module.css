@@ -1,0 +1,31 @@
+.root {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.user {
+  text-decoration: none;
+  display: inline-block;
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  &:before {
+    content: "\f2bd";
+    display: inline;
+    margin-right: 10px;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+}
+
+.langOption {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.activeLang {
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+}

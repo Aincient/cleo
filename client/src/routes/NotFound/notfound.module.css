@@ -1,0 +1,35 @@
+.root {
+  text-align: center;
+  padding: 20px;
+}
+
+.wrapper {
+  text-align: center;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 70px 0px rgba(0,0,0,.1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -185px;
+  margin-top: -200px;
+  max-width: 370px;
+  width: 100%;
+  @mixin mobile {
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: 50%;
+    max-width: 300px;
+    margin-top: -160px;
+  }
+}
+
+.name {
+  font-size: 24px;
+  padding: 20px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}

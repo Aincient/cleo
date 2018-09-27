@@ -1,0 +1,29 @@
+.tabWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+
+
+.gobackwrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.goBack {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  &:after {
+    content: "\F057";
+    display: inline-block;
+    padding: 10px 10px 0;
+    font: normal normal normal 24px/1 FontAwesome;
+  }
+}

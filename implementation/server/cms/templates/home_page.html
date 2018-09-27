@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}homepage{% endblock %}
+
+{% block content %}
+    <h1>{{page.title}}</h1>
+    {{ page.body|richtext }}
+
+    {% for item in page.homepage_blocks.all %}
+        <div style="background-color: {{ item.background_color}}">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.body }}</p>
+        </div>
+    {% endfor %}
+    
+{% endblock %}

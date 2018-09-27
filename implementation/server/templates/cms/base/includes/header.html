@@ -1,0 +1,31 @@
+{% load wagtailcore_tags wagtailimages_tags menu_tags wagtailtrans_tags %}
+
+{% if page.image %}
+    {% image page.image fill-1920x600 as image %}
+    <div class="header" style="background-image:url('{{ image.url }}')">
+{% else %}
+    <div class="header">
+{% endif %}
+        <div class="hero-gradient-mask"></div>
+        <div class="inner">
+            <div class="header-wrapper ">
+                <div class="inner">
+                    <div class="logo">
+                        <h1>{{ page.title }}</h1>
+                    </div>
+                    <div class="navigation">
+                        {% get_translations page homepage_fallback=True include_self=True as translations %}
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="slogan">
+                <h2>{{ page.hero_text }}</h2>
+                    {% if page.hero_cta_link %}
+                    <a href="{% pageurl page.hero_cta_link %}" class="hero-cta-link hvr-icon-forward">
+                        {{ page.hero_cta }}
+                    </a>
+                    {% else %} {{ page.hero_cta }} {% endif %}
+                </div>
+        </div>
+    </div>

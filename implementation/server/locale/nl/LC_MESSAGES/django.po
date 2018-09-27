@@ -1,0 +1,160 @@
+# cleo.aincient.org Dutch translations.
+# Copyright (C) 2018 Goldmund, Wyldebeast & Wunderliebe
+# This file is distributed under the same license as the PACKAGE package.
+# Artur Barseghyan <barseghyan@gw20e.com>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-03 16:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Artur Barseghyan <barseghyan@gw20e.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: settings/base.py:55
+msgid "English"
+msgstr "Engels"
+
+#: settings/base.py:57
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: templates/account/email/email_confirmation_message.txt:1
+#, python-format
+msgid ""
+"Welcome to CLEO\n"
+"\n"
+"You're receiving this e-mail because user %(user_display)s has given yours "
+"as an e-mail address to connect their account.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s\n"
+msgstr ""
+"Welkom bij CLEO\n"
+"\n"
+"Je ontvangt deze email omdat gebruiker %(user_display)s dit als emailadres "
+"heeft opgegeven om te koppelen aan zijn of haar account.\n"
+"\n"
+"Om te bevestigen dat dit correct is, bezoek %(activate_url)s\n"
+
+#: templates/account/email/email_confirmation_message.txt:7
+msgid "Thank you from CLEO!\n"
+msgstr "Bedankt namens CLEO!\n"
+
+#: templates/account/email/email_confirmation_subject.txt:3
+msgid "Please confirm your e-mail address"
+msgstr "Bevestig je emailadres"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "Emailadres bevestigen"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"Bevestig dat <a href=\"mailto:%(email)s\">%(email)s</a> een emailadres is "
+"voor gebruiker %(user_display)s."
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"Deze email verificatie link is verlopen of niet geldig. Dien een"
+"<a href=\"%(email_url)s\">nieuw email verificatie verzoek</a> in."
+
+#: templates/invitations/email/email_invite_message.txt:3
+#, python-format
+msgid ""
+"\n"
+"\n"
+"Hello,\n"
+"\n"
+"You (%(email)s) have been invited to join %(site_name)s\n"
+"\n"
+"If you'd like to join, please go to %(invite_url)s\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"Hallo,\n"
+"\n"
+"Je (%(email)s) bent uitgenodigd om deel te nemen aan %(site_name)s\n"
+"\n"
+"Als je wilt deelnemen, ga je naar %(invite_url)s\n"
+"\n"
+
+#: templates/invitations/email/email_invite_subject.txt:3
+#, python-format
+msgid "Invitation to join %(site_name)s"
+msgstr "Uitnodiging om lid te worden van %(site_name)s"
+
+#: templates/invitations/forms/_invite.html:3
+#: templates/invitations/forms/_invites.html:5
+msgid "Invite"
+msgstr "Uitnodigen"
+
+#: templates/invitations/forms/_invite.html:4
+msgid ""
+"Please add an email below. The user will receive an email with instructions."
+msgstr ""
+"Voeg hieronder een email toe. De gebruiker ontvangt een email met instructies."
+
+#: templates/invitations/forms/_invite.html:9
+msgid "Email"
+msgstr "Email"
+
+#: templates/invitations/forms/_invites.html:6
+msgid ""
+"Please add emails below. Each user will receive an email with instructions."
+msgstr ""
+"Voeg hieronder emails toe. Elke gebruiker ontvangt een email met instructies."
+
+#: templates/invitations/forms/_invites_success.html:5
+msgid "Invites successfully sent"
+msgstr "Uitnodigingen zijn succesvol verzonden"
+
+#: templates/invitations/messages/invite_accepted.txt:3
+#, python-format
+msgid "Invitation to - %(email)s - has been accepted"
+msgstr "Uitnodiging voor - %(email)s - is geaccepteerd"
+
+#: templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"U ontvangt deze email omdat u een wachtwoordreset voor uw "
+"gebruikersaccount heeft aangevraagd op %(site_name)s."
+
+#: templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Ga naar de volgende pagina en kies een nieuw wachtwoord:"
+
+#: templates/registration/password_reset_email.html:10
+msgid "Your username, in case you've forgotten:"
+msgstr "Uw gebruikersnaam, voor het geval u het vergeten bent:"
+
+#: templates/registration/password_reset_email.html:12
+msgid "Thanks for using our site!"
+msgstr "Bedankt voor het gebruik van onze site!"
+
+#: templates/registration/password_reset_email.html:14
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "De %(site_name)s team"

@@ -1,0 +1,50 @@
+{% load navigation_tags static wagtailuserbar %}
+
+{% block head %}
+    {% include "./includes/head.html" %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92523079-2"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-92523079-2');
+
+</script>
+{% endblock head %}
+
+<body class="{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}">
+{% wagtailuserbar %}
+
+{% block head-extra %}
+{% endblock head-extra %}
+
+<div class="wrapper" role="main">
+    {% block content %}
+    {% endblock content %}
+</div>
+<div class="feedback">
+    {% if page.language|stringformat:"s" ==  "English" %}
+        <a href="/pages/en/feedback/">Feedback</a>
+    {% elif page.language|stringformat:"s" ==  "Dutch" %}
+        <a href="/pages/nl/feedback/">Feedback</a>
+    {% endif %}
+</div>
+<!-- Footer -->
+{% include "./includes/footer.html" %}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="{% static 'cms/js/main.js' %}"></script>
+
+</body>
+
+</html>

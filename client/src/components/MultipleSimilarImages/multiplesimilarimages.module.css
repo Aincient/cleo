@@ -1,0 +1,69 @@
+.root {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.wrapper {
+  border-radius: 4px;
+  background: #333;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.image {
+  width: 23%;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1%;
+  transition: 250ms all;
+  &:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+  @media screen and (min-width: 421px) and (max-width: 1024px) and (orientation:landscape) {
+    width: 48%;
+    height: 270px;
+  }
+  @mixin mobile {
+    width: 48%;
+    height: 140px;
+  }
+}
+
+
+.startImageSearch {
+  text-align: center;
+  h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.selectedImageCountWrapper {
+  text-align: center;
+}
+
+.selectedImageCount {
+  display: inline-block;
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, .13);
+  border-radius: 4px;
+  font-size: 18px;
+  margin: 10px 0;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.clearObjects {
+  padding: 10px 0 0;
+  font-size: 14px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

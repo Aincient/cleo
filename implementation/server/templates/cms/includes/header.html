@@ -1,0 +1,19 @@
+{% load navigation_tags %}
+
+<div class="header clearfix" role="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% block main_navigation %}
+                    <nav  id="main-navigation" role="navigation" aria-label="Primary site navigation">
+                        <ul class="nav nav-pills">
+                            {# main_menu is defined in base/templatetags/navigation_tags.py #}
+                            {% get_site_root as site_root %}
+                            {% top_menu parent=site_root calling_page=self %}
+                        </ul>
+                    </nav>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>

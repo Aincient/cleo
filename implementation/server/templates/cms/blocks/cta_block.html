@@ -1,0 +1,13 @@
+{% load wagtailimages_tags wagtailcore_tags %}
+
+{% if self.image %}
+  {% image self.image fill-1920x600 as image %}
+    <div id="{{self.anchor}}" class="block" style="background-image:url('{{ image.url }}'); color: {{self.color}}; text-shadow: 0px 0px 43px rgba(6, 6, 6, 0.74)">
+  {% else %}
+    <div id="{{self.anchor}}" class="block" style="background-color: {{self.background_color}}; color: {{self.color}}">
+  {% endif %}
+  <div class="inner">
+      {{self.text|richtext}}
+      <a class="button custom" href="{{self.link}}">{{self.cta_title}}</a>
+  </div>
+</div>

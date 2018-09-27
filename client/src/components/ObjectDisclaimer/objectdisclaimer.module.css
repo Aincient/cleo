@@ -1,0 +1,17 @@
+.root {
+  padding: 20px 0;
+}
+
+.info {
+  font-size: 14px;
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.link {
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 14px;
+  font-style: italic;
+}

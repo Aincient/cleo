@@ -1,0 +1,65 @@
+.nestedFacet {
+  margin-left: 20px;
+  display: none;
+}
+
+.facetOpen {
+  display: block;
+}
+
+.filterTitle {
+  display: inline-block;
+  max-width: 70%;
+}
+
+.options {
+  margin: 0 auto;
+  min-width: 500px;
+  @mixin mobile {
+    min-width: initial;
+  }
+}
+.count {
+  color: rgb(228, 228, 228);
+  vertical-align: top;
+  margin-left: 5px;
+  margin-top: -3px;
+  display: inline-block;
+}
+
+.title {
+  position: relative;
+  text-align: left;
+}
+
+.nestedFacetOverlayTitle {
+  position: relative;
+  label {
+    display: inline-block!important;
+    margin-bottom: 0!important;
+    text-transform: capitalize;
+  }
+  &.open {
+    + .nestedFacet {
+      display: block;
+    }
+  }
+  
+}
+
+.filterOptionCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.toggleHandle {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  line-height: 24px;
+  top: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}

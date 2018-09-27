@@ -1,0 +1,12 @@
+.root {
+  padding: 10px 0;
+}
+
+.wrapper {
+  font-size: 24px;
+  font-weight: 200;
+  @mixin mobile {
+    text-align: center;
+  }
+}
+

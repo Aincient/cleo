@@ -1,0 +1,14 @@
+.root {
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.wrapper {
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.info {
+  font-style: italic;
+  font-size: 14px;
+}

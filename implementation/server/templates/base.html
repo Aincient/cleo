@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block meta-title %}CLEO{% endblock %}</title>
+    <meta name="description" content="{% block meta-description %}{% endblock %}"/>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    {% block extra-head %}{% endblock %}
+</head>
+<body>
+
+<div class="main-wrapper">
+        <div class="wrapper"> 
+
+                <div class="top-bar">
+                        <div class="top-bar-left">
+                            {% block nav-menu %}
+                            <ul class="menu">
+                                {% block nav-menu-items %}
+                                    {% with True as home_is_active %}
+                                        {#% include "snippets/menu_items.html" %#}
+                                    {% endwith %}
+                                {% endblock nav-menu-items %}
+                            </ul>
+                            {% endblock nav-menu %}
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="callout large primary">
+                        <div class="row column text-center">
+                            <h1 class="page-title">{% block page-title %}CLEO{% endblock page-title %}</h1>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <div class="large-9 columns" role="content">
+                            {% block main-content %}
+                            {#% include "snippets/article.html" %#}
+                            {% block content %}
+                            {% endblock content %}
+                            {% endblock main-content %}
+                        </div>
+                    </div>
+                    
+                    
+                    <footer class="row">
+                        <div class="row expanded">
+                            <div class="medium-6 columns">
+                                {% block footer-links %}
+                                <ul class="menu">
+                                    {#% include "snippets/menu_items.html" %#}
+                                </ul>
+                                {% endblock footer-links %}
+                            </div>
+                            <div class="medium-6 columns">
+                                <ul class="menu align-right">
+                                    {#<li class="menu-text">Copyright © 2017 Artur Barseghyan</li>#}
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+            
+            
+            </div>
+    
+</div>
+
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'rest_framework/js/jquery-1.12.4.min.js' %}"></script>
+{% block extra-js %}{% endblock %}
+
+</body>
+</html>

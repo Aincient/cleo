@@ -1,0 +1,33 @@
+.root {
+  min-height: 60px;
+  background: rgba(242, 242, 242, 1);
+  line-height: 60px;
+  a {
+    text-decoration: none;
+  }
+  @mixin mobile {
+    padding-bottom: 10px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit {
+  &:before {
+    content: "\f002";
+    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+}
+
+.inputGroup {
+  margin-bottom: 0!important;
+  input {
+    border: 1px solid #ccc!important;
+    border-right: 0!important;
+  }
+}

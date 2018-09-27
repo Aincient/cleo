@@ -1,0 +1,56 @@
+.overlayWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff80;
+  bottom: 0;
+  z-index: 8;
+  padding: 5% 0;
+  overflow: scroll;
+  text-align: left;
+  color: default;
+}
+
+.overlay {
+  padding: 20px;
+  background: white;
+  top: 10%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 85%;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+
+.overlayHeader {
+  border-bottom: 1px solid #ccc;
+  margin: -20px;
+  margin-bottom: 20px;
+  padding: 15px 20px 10px;
+  position: relative;
+}
+
+.confirm {
+  position: absolute;
+  right: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  &:after {
+    content: "\f057";
+    display: inline-block;
+    padding: 10px 10px 0;
+    font: normal normal normal 24px/1 FontAwesome;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

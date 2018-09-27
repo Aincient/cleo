@@ -1,0 +1,890 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-03 16:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cached_api_calls/models/geocoding.py:21
+msgid "Location name"
+msgstr ""
+
+#: cached_api_calls/models/geocoding.py:28
+msgid "Raw response"
+msgstr ""
+
+#: cached_api_calls/models/geocoding.py:33 collection/models/item.py:100
+msgid "Geo coordinates"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:18
+#: cached_api_calls/models/translation.py:22
+msgid "Original"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:24
+#: cached_api_calls/models/translation.py:28
+msgid "Translated"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:28
+#: cached_api_calls/models/translation.py:32
+msgid "Source language"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:32
+#: cached_api_calls/models/translation.py:36
+msgid "Target language"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:36
+msgid "Translation exists"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:40
+msgid "Translation is supervised"
+msgstr ""
+
+#: cached_api_calls/models/thesauri.py:44
+msgid "Disregard the translation"
+msgstr ""
+
+#: cached_api_calls/models/translation_fix.py:31
+msgid "Original (wrong) translation"
+msgstr ""
+
+#: cached_api_calls/models/translation_fix.py:37
+msgid "Fixed translation"
+msgstr ""
+
+#: cached_api_calls/models/translation_fix.py:43
+msgid "The field in which the faulty translation occurs"
+msgstr ""
+
+#: cached_api_calls/models/translation_fix.py:51
+msgid "Language of the wrong translation"
+msgstr ""
+
+#: cached_api_calls/models/translation_fix.py:57
+msgid "Match should be exact"
+msgstr ""
+
+#: collection/admin/image.py:47
+msgid "{} images downloaded/updated."
+msgstr ""
+
+#: collection/admin/image.py:52
+msgid "Make active and download files"
+msgstr ""
+
+#: collection/admin/image.py:76
+msgid "Make inactive and delete local files"
+msgstr ""
+
+#: collection/admin/image.py:130 collection/admin/item.py:242
+msgid "Web image URL preview"
+msgstr ""
+
+#: collection/admin/item.py:265
+msgid "Successfully imported {} items."
+msgstr ""
+
+#: collection/models/image.py:26
+msgid "Image API URL"
+msgstr ""
+
+#: collection/models/image.py:30
+msgid "Primary image"
+msgstr ""
+
+#: collection/models/image.py:36 user_account/models.py:143
+msgid "Image"
+msgstr ""
+
+#: collection/models/image.py:71
+msgid "Active"
+msgstr ""
+
+#: collection/models/image.py:75
+msgid "Trimmed"
+msgstr ""
+
+#: collection/models/image.py:79 user_account/models.py:39
+#: user_account/models.py:147
+msgid "Date imported"
+msgstr ""
+
+#: collection/models/image.py:83 user_account/models.py:43
+#: user_account/models.py:151
+msgid "Date updated"
+msgstr ""
+
+#: collection/models/image.py:93
+msgid "Title"
+msgstr ""
+
+#: collection/models/image.py:94 collection/models/image.py:111
+#: collection/models/item.py:119 collection/models/item.py:320
+#: collection/models/item.py:523
+msgid "Title of the object"
+msgstr ""
+
+#: collection/models/image.py:99
+msgid "Description"
+msgstr ""
+
+#: collection/models/image.py:100 collection/models/image.py:117
+#: collection/models/item.py:125 collection/models/item.py:326
+#: collection/models/item.py:529
+msgid "Description of the object"
+msgstr ""
+
+#: collection/models/image.py:110 collection/models/item.py:522
+msgid "Original title"
+msgstr ""
+
+#: collection/models/image.py:116 collection/models/item.py:528
+msgid "Original description"
+msgstr ""
+
+#: collection/models/item.py:63
+msgid "Importer UID"
+msgstr ""
+
+#: collection/models/item.py:69 collection/models/item.py:70
+msgid "Record number"
+msgstr ""
+
+#: collection/models/item.py:76
+msgid "Inventory number"
+msgstr ""
+
+#: collection/models/item.py:77
+msgid "Inventory number in the museum collection"
+msgstr ""
+
+#: collection/models/item.py:81
+msgid "API item URL"
+msgstr ""
+
+#: collection/models/item.py:82
+msgid "Link to original data in API"
+msgstr ""
+
+#: collection/models/item.py:88
+msgid "External item URL"
+msgstr ""
+
+#: collection/models/item.py:89
+msgid "Link to external data URL"
+msgstr ""
+
+#: collection/models/item.py:93
+msgid "Images"
+msgstr ""
+
+#: collection/models/item.py:118 payments_subscriptions/models.py:46
+msgid "Title (EN)"
+msgstr ""
+
+#: collection/models/item.py:124 payments_subscriptions/models.py:50
+msgid "Description (EN)"
+msgstr ""
+
+#: collection/models/item.py:131
+msgid "Department (EN)"
+msgstr ""
+
+#: collection/models/item.py:132 collection/models/item.py:333
+#: collection/models/item.py:536
+msgid "Department of the museum"
+msgstr ""
+
+#: collection/models/item.py:137
+msgid "Dimensions (EN)"
+msgstr ""
+
+#: collection/models/item.py:138 collection/models/item.py:339
+#: collection/models/item.py:542
+msgid "Dimensions of the object"
+msgstr ""
+
+#: collection/models/item.py:144
+msgid "City (EN)"
+msgstr ""
+
+#: collection/models/item.py:149
+msgid "Object date (EN)"
+msgstr ""
+
+#: collection/models/item.py:155
+msgid "Object date begin (EN)"
+msgstr ""
+
+#: collection/models/item.py:161
+msgid "Object date end (EN)"
+msgstr ""
+
+#: collection/models/item.py:166
+msgid "Period (EN)"
+msgstr ""
+
+#: collection/models/item.py:178
+msgid "Country (EN)"
+msgstr ""
+
+#: collection/models/item.py:184
+msgid "Object type (EN)"
+msgstr ""
+
+#: collection/models/item.py:185 collection/models/item.py:386
+#: collection/models/item.py:595
+msgid "Type of object"
+msgstr ""
+
+#: collection/models/item.py:190
+msgid "Material (EN)"
+msgstr ""
+
+#: collection/models/item.py:191 collection/models/item.py:392
+#: collection/models/item.py:601
+msgid "Material(s) of which the object is made"
+msgstr ""
+
+#: collection/models/item.py:196
+msgid "Dynasty (EN)"
+msgstr ""
+
+#: collection/models/item.py:201
+msgid "References (EN)"
+msgstr ""
+
+#: collection/models/item.py:202 collection/models/item.py:403
+#: collection/models/item.py:607
+msgid "References to this object in the professional literature"
+msgstr ""
+
+#: collection/models/item.py:207
+msgid "Acquired (EN)"
+msgstr ""
+
+#: collection/models/item.py:208 collection/models/item.py:409
+#: collection/models/item.py:613
+msgid "How the museum acquired the object"
+msgstr ""
+
+#: collection/models/item.py:214
+msgid "Site found (EN)"
+msgstr ""
+
+#: collection/models/item.py:215 collection/models/item.py:416
+#: collection/models/item.py:620
+msgid "Complete record of site where the object was found"
+msgstr ""
+
+#: collection/models/item.py:220
+msgid "Keywords (EN)"
+msgstr ""
+
+#: collection/models/item.py:221 collection/models/item.py:422
+#: collection/models/item.py:625 collection/models/item.py:626
+msgid "Keywords"
+msgstr ""
+
+#: collection/models/item.py:227
+msgid "Reign (EN)"
+msgstr ""
+
+#: collection/models/item.py:228 collection/models/item.py:429
+#: collection/models/item.py:632 collection/models/item.py:633
+msgid "Reign"
+msgstr ""
+
+#: collection/models/item.py:234
+msgid "Classification (EN)"
+msgstr ""
+
+#: collection/models/item.py:235 collection/models/item.py:436
+#: collection/models/item.py:639 collection/models/item.py:640
+msgid "Classification"
+msgstr ""
+
+#: collection/models/item.py:242
+msgid "Credit line (EN)"
+msgstr ""
+
+#: collection/models/item.py:243 collection/models/item.py:444
+#: collection/models/item.py:662
+msgid "Credit line"
+msgstr ""
+
+#: collection/models/item.py:248
+msgid "Region (EN)"
+msgstr ""
+
+#: collection/models/item.py:249 collection/models/item.py:450
+#: collection/models/item.py:667
+msgid "Region"
+msgstr ""
+
+#: collection/models/item.py:254
+msgid "Sub region (EN)"
+msgstr ""
+
+#: collection/models/item.py:255 collection/models/item.py:456
+#: collection/models/item.py:672
+msgid "Sub region"
+msgstr ""
+
+#: collection/models/item.py:260
+msgid "Locale (EN)"
+msgstr ""
+
+#: collection/models/item.py:261 collection/models/item.py:462
+#: collection/models/item.py:677
+msgid "Locale"
+msgstr ""
+
+#: collection/models/item.py:266
+msgid "Excavation (EN)"
+msgstr ""
+
+#: collection/models/item.py:267 collection/models/item.py:468
+#: collection/models/item.py:682
+msgid "Excavation"
+msgstr ""
+
+#: collection/models/item.py:272
+msgid "Museum collection (EN)"
+msgstr ""
+
+#: collection/models/item.py:273 collection/models/item.py:474
+msgid "Museum collection"
+msgstr ""
+
+#: collection/models/item.py:278
+msgid "Style (EN)"
+msgstr ""
+
+#: collection/models/item.py:279 collection/models/item.py:480
+#: collection/models/item.py:692
+msgid "Style"
+msgstr ""
+
+#: collection/models/item.py:284
+msgid "Culture (EN)"
+msgstr ""
+
+#: collection/models/item.py:285 collection/models/item.py:486
+#: collection/models/item.py:697
+msgid "Culture"
+msgstr ""
+
+#: collection/models/item.py:290
+msgid "Inscriptions (EN)"
+msgstr ""
+
+#: collection/models/item.py:291 collection/models/item.py:492
+#: collection/models/item.py:702
+msgid "Inscriptions"
+msgstr ""
+
+#: collection/models/item.py:296
+msgid "Provenance (EN)"
+msgstr ""
+
+#: collection/models/item.py:297 collection/models/item.py:498
+#: collection/models/item.py:707
+msgid "Provenance"
+msgstr ""
+
+#: collection/models/item.py:302
+msgid "Exhibitions (EN)"
+msgstr ""
+
+#: collection/models/item.py:303 collection/models/item.py:504
+#: collection/models/item.py:717
+msgid "Exhibitions"
+msgstr ""
+
+#: collection/models/item.py:319 payments_subscriptions/models.py:57
+msgid "Title (NL)"
+msgstr ""
+
+#: collection/models/item.py:325 payments_subscriptions/models.py:61
+msgid "Description (NL)"
+msgstr ""
+
+#: collection/models/item.py:332
+msgid "Department (NL)"
+msgstr ""
+
+#: collection/models/item.py:338
+msgid "Dimensions (NL)"
+msgstr ""
+
+#: collection/models/item.py:345
+msgid "City (NL)"
+msgstr ""
+
+#: collection/models/item.py:350
+msgid "Object date (NL)"
+msgstr ""
+
+#: collection/models/item.py:356
+msgid "Object date begin (NL)"
+msgstr ""
+
+#: collection/models/item.py:362
+msgid "Object date end (NL)"
+msgstr ""
+
+#: collection/models/item.py:367
+msgid "Period (NL)"
+msgstr ""
+
+#: collection/models/item.py:379
+msgid "Country (NL)"
+msgstr ""
+
+#: collection/models/item.py:385
+msgid "Object type (NL)"
+msgstr ""
+
+#: collection/models/item.py:391
+msgid "Material (NL)"
+msgstr ""
+
+#: collection/models/item.py:397
+msgid "Dynasty (NL)"
+msgstr ""
+
+#: collection/models/item.py:402
+msgid "References (NL)"
+msgstr ""
+
+#: collection/models/item.py:408
+msgid "Acquired (NL)"
+msgstr ""
+
+#: collection/models/item.py:415
+msgid "Site found (NL)"
+msgstr ""
+
+#: collection/models/item.py:421
+msgid "Keywords (NL)"
+msgstr ""
+
+#: collection/models/item.py:428
+msgid "Reign (NL)"
+msgstr ""
+
+#: collection/models/item.py:435
+msgid "Classification (NL)"
+msgstr ""
+
+#: collection/models/item.py:443
+msgid "Credit line (NL)"
+msgstr ""
+
+#: collection/models/item.py:449
+msgid "Region (NL)"
+msgstr ""
+
+#: collection/models/item.py:455
+msgid "Sub region (NL)"
+msgstr ""
+
+#: collection/models/item.py:461
+msgid "Locale (NL)"
+msgstr ""
+
+#: collection/models/item.py:467
+msgid "Excavation (NL)"
+msgstr ""
+
+#: collection/models/item.py:473
+msgid "Museum collection (NL)"
+msgstr ""
+
+#: collection/models/item.py:479
+msgid "Style (NL)"
+msgstr ""
+
+#: collection/models/item.py:485
+msgid "Culture (NL)"
+msgstr ""
+
+#: collection/models/item.py:491
+msgid "Inscriptions (NL)"
+msgstr ""
+
+#: collection/models/item.py:497
+msgid "Provenance (NL)"
+msgstr ""
+
+#: collection/models/item.py:503
+msgid "Exhibitions (NL)"
+msgstr ""
+
+#: collection/models/item.py:515
+msgid "Language code of the original"
+msgstr ""
+
+#: collection/models/item.py:535
+msgid "Original department"
+msgstr ""
+
+#: collection/models/item.py:541
+msgid "Original dimensions"
+msgstr ""
+
+#: collection/models/item.py:548
+msgid "Original city"
+msgstr ""
+
+#: collection/models/item.py:553
+msgid "Original object date"
+msgstr ""
+
+#: collection/models/item.py:559
+msgid "Original object date begin"
+msgstr ""
+
+#: collection/models/item.py:565
+msgid "Original object date end"
+msgstr ""
+
+#: collection/models/item.py:570
+msgid "Original period"
+msgstr ""
+
+#: collection/models/item.py:576
+msgid "Original dynasty"
+msgstr ""
+
+#: collection/models/item.py:588
+msgid "Original country"
+msgstr ""
+
+#: collection/models/item.py:594
+msgid "Original object type"
+msgstr ""
+
+#: collection/models/item.py:600
+msgid "Original material"
+msgstr ""
+
+#: collection/models/item.py:606
+msgid "Original references"
+msgstr ""
+
+#: collection/models/item.py:612
+msgid "Original acquired"
+msgstr ""
+
+#: collection/models/item.py:619
+msgid "Original site found"
+msgstr ""
+
+#: collection/models/item.py:648
+msgid "Period tree node"
+msgstr ""
+
+#: collection/models/item.py:649
+msgid "The database period that is related to this object"
+msgstr ""
+
+#: collection/models/item.py:652
+msgid "Classified as"
+msgstr ""
+
+#: collection/models/item.py:655
+msgid "How this object was classified by our AI."
+msgstr ""
+
+#: collection/models/item.py:687
+msgid "Collection"
+msgstr ""
+
+#: collection/models/item.py:712
+msgid "Accession date"
+msgstr ""
+
+#: collection/models/item_image.py:19 collection/models/item_image.py:20
+msgid "Item image"
+msgstr ""
+
+#: collection/models/period.py:19
+msgid "English name"
+msgstr ""
+
+#: collection/models/period.py:23
+msgid "Dutch name"
+msgstr ""
+
+#: collection/models/period.py:39
+msgid "Date begin (EN)"
+msgstr ""
+
+#: collection/models/period.py:45
+msgid "Date end (EN)"
+msgstr ""
+
+#: invitations_addons/forms.py:23
+msgid "This e-mail address {} has already been invited."
+msgstr ""
+
+#: invitations_addons/forms.py:26
+msgid "These e-mail addresses {} have already been invited."
+msgstr ""
+
+#: invitations_addons/forms.py:31
+msgid "This e-mail address {} has already accepted an invite."
+msgstr ""
+
+#: invitations_addons/forms.py:34
+msgid "These e-mail addresses {} have already accepted an invite."
+msgstr ""
+
+#: invitations_addons/forms.py:39
+msgid "An active user is using this e-mail address {}."
+msgstr ""
+
+#: invitations_addons/forms.py:42
+msgid "Active users are using these e-mail addresses {}"
+msgstr ""
+
+#: invitations_addons/forms.py:127
+msgid "E-mails"
+msgstr ""
+
+#: invitations_addons/models.py:27
+msgid "e-mail address"
+msgstr ""
+
+#: invitations_addons/models.py:29
+msgid "created"
+msgstr ""
+
+#: payments_subscriptions/admin.py:50
+msgid "English"
+msgstr ""
+
+#: payments_subscriptions/admin.py:57
+msgid "Dutch"
+msgstr ""
+
+#: payments_subscriptions/admin.py:64
+msgid "Dates"
+msgstr ""
+
+#: payments_subscriptions/constants.py:28
+msgid "Waiting"
+msgstr ""
+
+#: payments_subscriptions/constants.py:29
+msgid "Preauth"
+msgstr ""
+
+#: payments_subscriptions/constants.py:30
+msgid "Confirmed"
+msgstr ""
+
+#: payments_subscriptions/constants.py:31
+msgid "Rejected"
+msgstr ""
+
+#: payments_subscriptions/constants.py:32
+msgid "Refunded"
+msgstr ""
+
+#: payments_subscriptions/constants.py:33
+msgid "Error"
+msgstr ""
+
+#: payments_subscriptions/constants.py:34
+msgid "Input"
+msgstr ""
+
+#: payments_subscriptions/constants.py:35
+msgid "Paid"
+msgstr ""
+
+#: payments_subscriptions/models.py:24
+msgid "Code"
+msgstr ""
+
+#: payments_subscriptions/models.py:27
+msgid "Codes must be unique. Allows identifying the subscription."
+msgstr ""
+
+#: payments_subscriptions/models.py:32 user_account/forms.py:15
+#: user_account/models.py:85
+msgid "Number of requests"
+msgstr ""
+
+#: payments_subscriptions/models.py:35
+msgid "Price"
+msgstr ""
+
+#: payments_subscriptions/models.py:40 payments_subscriptions/models.py:108
+msgid "Created"
+msgstr ""
+
+#: payments_subscriptions/models.py:41 payments_subscriptions/models.py:109
+msgid "Modified"
+msgstr ""
+
+#: payments_subscriptions/models.py:69 payments_subscriptions/models.py:94
+msgid "Product"
+msgstr ""
+
+#: payments_subscriptions/models.py:70
+msgid "Products"
+msgstr ""
+
+#: payments_subscriptions/models.py:88 user_account/models.py:65
+#: user_account/models.py:110 user_account/models.py:137
+msgid "User"
+msgstr ""
+
+#: payments_subscriptions/models.py:100
+msgid "Status"
+msgstr ""
+
+#: payments_subscriptions/models.py:103
+msgid "Amount"
+msgstr ""
+
+#: payments_subscriptions/models.py:124
+msgid "Order"
+msgstr ""
+
+#: payments_subscriptions/models.py:125
+msgid "Orders"
+msgstr ""
+
+#: payments_subscriptions/viewsets.py:90
+msgid "Payment for {}"
+msgstr ""
+
+#: user_account/admin.py:82
+msgid "Username"
+msgstr ""
+
+#: user_account/admin.py:97
+#: user_account/templates/user_account/admin/add_credits.html:15
+#: user_account/templates/user_account/admin/add_credits.html:39
+msgid "Add credits"
+msgstr ""
+
+#: user_account/admin.py:99
+msgid "Add"
+msgstr ""
+
+#: user_account/admin.py:102
+msgid "Num requests"
+msgstr ""
+
+#: user_account/admin.py:120
+msgid "{} credits added"
+msgstr ""
+
+#: user_account/admin.py:135
+msgid "Add num requests"
+msgstr ""
+
+#: user_account/models.py:22 user_account/models.py:49
+msgid "User group"
+msgstr ""
+
+#: user_account/models.py:28
+msgid "Users"
+msgstr ""
+
+#: user_account/models.py:31
+msgid "Valid from"
+msgstr ""
+
+#: user_account/models.py:34
+msgid "Valid until"
+msgstr ""
+
+#: user_account/models.py:50
+msgid "User groups"
+msgstr ""
+
+#: user_account/models.py:74
+msgid "Language"
+msgstr ""
+
+#: user_account/models.py:81
+msgid "Unlimited access"
+msgstr ""
+
+#: user_account/models.py:94
+msgid "Account setting"
+msgstr ""
+
+#: user_account/models.py:95
+msgid "Account settings"
+msgstr ""
+
+#: user_account/models.py:98
+msgid "Account settings for user {}"
+msgstr ""
+
+#: user_account/models.py:117
+msgid "Collection item"
+msgstr ""
+
+#: user_account/models.py:123
+msgid "User collection item favourite"
+msgstr ""
+
+#: user_account/models.py:124
+msgid "User collection item favourites"
+msgstr ""
+
+#: user_account/models.py:157
+msgid "User search image"
+msgstr ""
+
+#: user_account/models.py:158
+msgid "User search images"
+msgstr ""
+
+#: user_account/serializers.py:45
+msgid "You have already added that item as a favourite."
+msgstr ""
+
+#: user_account/templates/user_account/admin/add_credits.html:12
+msgid "Home"
+msgstr ""
+
+#: user_account/templates/user_account/admin/add_credits.html:26
+msgid "Please correct the error below."
+msgstr ""
+
+#: user_account/templates/user_account/admin/add_credits.html:26
+msgid "Please correct the errors below."
+msgstr ""
+
+#: user_account/templates/user_account/admin/add_credits.html:29
+#, python-format
+msgid "Add credits for the user <strong>%(username)s</strong>."
+msgstr ""

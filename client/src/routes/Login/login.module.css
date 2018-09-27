@@ -1,0 +1,70 @@
+.root {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  min-height: 100vh;
+}
+
+.loginWrapper {
+  text-align: center;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 70px 0px rgba(0,0,0,.1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -185px;
+  margin-top: -200px;
+  max-width: 370px;
+  width: 100%;
+  @mixin mobile {
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: 50%;
+    max-width: 300px;
+    margin-top: -160px;
+  }
+}
+
+.langWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.langOption {
+  margin-right: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+  &.activeLang {
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+  }
+}
+
+.logo {
+  background-image: url('../../images/aincient_logo.png');
+  min-height: 130px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.name {
+  font-size: 24px;
+  padding: 20px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.passwordResetLink {
+  text-align: center;
+}

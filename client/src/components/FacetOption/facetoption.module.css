@@ -1,0 +1,85 @@
+.filterOption {
+  position: relative;
+}
+
+
+.filterOptionName {
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.filterOptionCount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: white;
+}
+
+[type="checkbox"] {
+  &:not(:checked),
+  &:checked {
+    display: none;
+    position: absolute;
+    & + label {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 10px;
+      background: transparent;
+      display: block;
+      line-height: 1;
+      transition: 200ms all;
+
+      > span {
+        padding-left: 25px;
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        line-height: 1.2;
+      }
+    }
+  }
+  &:not(:checked) {
+    & + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1.25em;
+      height: 1.25em;
+      border: 2px solid rgb(170, 133, 0);
+      background: white;
+      transition: 200ms all;
+
+    }
+  }
+  &:checked {
+    & + label {
+      border-color: #263f52;
+      &:before {
+        content: "\F00C";
+        position: absolute;
+        width: 1.45em;
+        height: 1.45em;
+        background: rgb(170, 133, 0);
+        color: #fff;
+        left: 0;
+        font: normal normal normal 14px/1 FontAwesome;
+        top: 0;
+        line-height: 1.5em;
+        text-align: center;
+      }
+    }
+  }
+  &:disabled:not(:checked) + label:before,
+  &:disabled:checked + label:before  {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+  &:disabled:checked + label:after {
+    color: #999;
+  }
+  &:disabled + label {
+    color: #aaa;
+  }
+}

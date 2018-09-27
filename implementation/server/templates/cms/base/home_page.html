@@ -1,0 +1,60 @@
+{% extends "../base.html" %} 
+
+{% load wagtailimages_tags wagtailcore_tags menu_tags wagtailtrans_tags %}
+
+{% block content %}
+<div class="homepage" id="#top">
+    <div class="lang-chooser">
+        <div class="inner">
+            <div class="lang-chooser-wrapper">
+                    {% if page.language|stringformat:"s" ==  "English" %}
+                    <a href="/nl/">NL</a>
+                    <a href="/" class="active">EN</a>
+                {% elif page.language|stringformat:"s" ==  "Dutch" %}
+                    <a href="/nl/" class="active">NL</a>
+                    <a href="/" >EN</a>
+                {% endif %}
+            </div>       
+        </div>
+    </div>
+    {% image page.image fill-1920x600 as image %}
+    <div class="header" style="background-image:url('{{ image.url }}')">
+        <div class="inner">
+            <div class="header-wrapper ">
+                <div class="inner">
+                    <div class="logo">
+                        {% if page.language|stringformat:"s" ==  "English" %}
+                            <h1><a href="/">CLEO</a></h1>
+                        {% elif page.language|stringformat:"s" ==  "Dutch" %}
+                            <h1><a href="/nl/">CLEO</a></h1>
+                        {% endif %}
+                    </div>
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="navigation">
+                        {% if page.language|stringformat:"s" ==  "English" %}
+                            {% flat_menu 'top_menu_en' max_levels=1 show_menu_heading=False  use_specific=USE_SPECIFIC_TOP_LEVEL  fall_back_to_default_site_menus=True %}
+                        {% elif page.language|stringformat:"s" ==  "Dutch" %}
+                            {% flat_menu 'top_menu_nl' max_levels=1 show_menu_heading=False  use_specific=USE_SPECIFIC_TOP_LEVEL  fall_back_to_default_site_menus=True %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="slogan">
+                {{ page.hero_text|richtext }}
+                {{page.sub_hero_block|richtext}}
+            </div>
+        </div>
+    </div>
+
+    {% if page.body %}
+    <div class="block-wrapper">
+        {{ page.body }}
+    </div>
+    {% endif %}
+
+</div>
+{% endblock content %}

@@ -1,0 +1,3 @@
+wagtail==2.1
+wagtailtrans==2.0.1
+wagtailmenus==2.10

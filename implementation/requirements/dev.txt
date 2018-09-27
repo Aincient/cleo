@@ -1,0 +1,6 @@
+-r django_1_11.txt
+-r wagtail.txt
+-r debug.txt
+-r docs.txt
+-r code_style.txt
+-r machine_learning.txt

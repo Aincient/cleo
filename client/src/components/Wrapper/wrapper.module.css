@@ -1,0 +1,49 @@
+.root {
+  background:  #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hasBG {
+  background-image: url('../../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.copy {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: rgb(189, 148, 0);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+  padding-right: 3px;
+  z-index: 1;
+  span {
+    display: none;
+    right: 0;
+    position: absolute;
+    width: 620px;
+    color: #333;
+  }
+  &:hover {
+    span {
+      display: inline-block;
+      @mixin mobile {
+        width: 300px;
+        bottom: 0;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.feedback {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}

@@ -1,0 +1,11 @@
+{% load wagtailimages_tags %}
+
+<div id="{{self.anchor}}" class="block" style="background-color: {{self.background_color}}; color: {{self.color}}">
+  <div class="inner">
+    <h2 class="title">{{self.title}}</h2>
+    <figure>
+      {% image self.image max-1024x768%}
+    </figure>
+    <p>{{ self.caption }}</p>
+  </div>
+</div>

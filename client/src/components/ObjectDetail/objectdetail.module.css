@@ -1,0 +1,218 @@
+.root {
+  padding-top: 20px;
+  padding-right: 10px;
+  @mixin mobile {
+    padding-right: 0;
+  }
+}
+
+.goBack {
+  font-size: 18px;
+  text-decoration: none;
+  @mixin mobile {
+    margin-bottom: 10px;
+    display: block;
+    padding-left: 10px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.image {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 0 40px;
+}
+
+.imageWrapper {
+
+}
+
+.similarImage {
+  width: 23%;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1%;
+  transition: 250ms all;
+  &:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+ 
+  @media screen and (min-width: 421px) and (max-width: 1024px) and (orientation:landscape) {
+    width: 48%;
+  }
+  @mixin mobile {
+    width: 48%;
+    height: 140px;
+  }
+}
+
+.bigImage {
+  padding-bottom: 20px;
+}
+
+.objectWrapper  {
+  margin: 20px 0;
+  background: rgba(242, 242, 242, 1);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.title {
+  font-weight: 400;
+  word-break: break-word;
+  @mixin mobile {
+    margin-top: 10px;
+  }
+}
+
+.buttonContainer {
+  @mixin mobile {
+    padding: 20px;
+  }
+  button {
+    margin-right: 10px;
+  }
+}
+
+.similarImages {
+  background: #333;
+  color: white;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.prevItem {
+  span {
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: "\f053";
+      font: normal normal normal 14px/1 FontAwesome;
+      right: 50%;
+      position: absolute;
+      top: 50%;
+      background: #333333b3;
+      color: white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin-top: -20px;
+      margin-right: -20px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+  
+
+.nextItem {
+  text-align: right;
+  span {
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: "\F054";
+      font: normal normal normal 14px/1 FontAwesome;
+      right: 50%;
+      position: absolute;
+      top: 50%;
+      background: #333333b3;
+      color: white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin-top: -20px;
+      margin-right: -20px;
+      transition: all 250ms;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.tag {
+  margin-right: 5px;
+}
+.saveObject {
+  margin-bottom: 10px;
+  &:before {
+    content: "\f0c7";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.downloadObject {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  &:before {
+    content: "\f019";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.removeObject {
+  margin-bottom: 10px;
+  &:before {
+    content: "\f05e";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.objectTitle {
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+
+.objectDetailRow {
+  margin-bottom: 10px;
+}
+
+.carousel {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    width: 700px;
+ }
+}
+
+.period {
+  text-transform: capitalize;
+}
+
+.dropdownMenu {
+  background: #aaa!important;
+  margin-top: -10px!important;
+  a {
+    color: white!important;
+  }
+}

@@ -1,0 +1,8 @@
+.root {
+  height: 60px;
+  background: white;
+  line-height: 60px;
+  a {
+    text-decoration: none;
+  }
+}
