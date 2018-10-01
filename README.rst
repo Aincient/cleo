@@ -150,7 +150,7 @@ To obtain a CSRF token make use of `/csrftoken/` endpoint.
 AI
 ==
 The description of the Artificial Intelligence (AI) or algorithm that was
-created for Cleo can be found at https://cleo.aincient.org/pages/en/open-source/
+created for Cleo can be found at https://cleo.aincient.org/pages/en/ai/
 
 Elasticsearch indexes
 =====================
